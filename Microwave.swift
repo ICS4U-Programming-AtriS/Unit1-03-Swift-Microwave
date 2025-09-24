@@ -59,7 +59,7 @@ if FOOD_CHOICES.contains(userFoodChoice) {
                 }
                 // Apply the quantity formula on the base reheat time.
                 // To get the actual reheat time. [in seconds]
-                let actualReheatTime = baseReheatTime * (quantity + 1) / 2
+                let actualReheatTime = baseReheatTime * (quantity + 1) * 0.5
                 // Convert pure seconds to a combination of minutes and seconds.
                 let minutes = actualReheatTime / SECONDS_PER_MINUTE
                 let seconds = actualReheatTime % SECONDS_PER_MINUTE
